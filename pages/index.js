@@ -32,7 +32,7 @@ export default function Home() {
                 ></Modal>
               </a>
               <a
-                href="https://wa.me/11952000102"
+                href="https://wa.me/5511952000102"
                 target="_blank"
                 rel="noreferrer"
               >
