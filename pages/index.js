@@ -11,9 +11,9 @@ export default function Home() {
         <div className="avatar"></div>
         <div className="profile">
           <div className="info">
-            <p> Your Name </p>
+            <p>Juliane Pereira</p>
             <div className="position">
-              <p> Position </p>
+              <p>Executiva de Contas Ak Networks</p>
             </div>
             <div className="profile-icons">
               <a
@@ -31,17 +31,36 @@ export default function Home() {
                   onClose={() => setShowModal(false)}
                 ></Modal>
               </a>
-
-              <a href="https://wa.me/" target="_blank" rel="noreferrer">
+              <a
+                href="https://wa.me/11952000102"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "whatsapp"]}
                   size="2x"
                   style={{ width: 40, height: 40 }}
                 />
               </a>
-              <a href="mailto: " target="_blank" rel="noreferrer">
+              <a
+                href="mailto: jpereira@aknetworks.com.br"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={("fab", "envelope")}
+                  size="2x"
+                  style={{ width: 40, height: 40 }}
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/aknetworks/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "linkedin"]}
                   size="2x"
                   style={{ width: 40, height: 40 }}
                 />
@@ -53,6 +72,3 @@ export default function Home() {
     </div>
   );
 }
-
-//Add your whatsapp phone number in "wa.me/"
-//Add your email in "mailto: "

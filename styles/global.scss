@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #0a234a;
+  color: #5e0e00;
   text-decoration: unset;
   font-size: 1em;
 
@@ -30,11 +30,11 @@ a {
   height: 155px;
   background-image: linear-gradient(
     to right top,
-    #030b17,
-    #081323,
-    #081930,
-    #081e3d,
-    #0a234a
+    #4d0006,
+    #5e0e00,
+    #801300,
+    #851300,
+    #b31b00
   );
   width: 100%;
   margin-top: 155px;
@@ -42,7 +42,7 @@ a {
 
 .avatar {
   //Add your image
-  background: url(../assets/default.png) center no-repeat;
+  background: url(../assets/avatar.jpg) center no-repeat;
   width: 120px;
   height: 120px;
   border-radius: 100%;
