@@ -13,7 +13,7 @@ export default function Home() {
           <div className="info">
             <p>Juliane Pereira</p>
             <div className="position">
-              <p>Executiva de Contas Ak Networks</p>
+              <p>Executiva de Contas</p>
             </div>
             <div className="profile-icons">
               <a

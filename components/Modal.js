@@ -30,11 +30,11 @@ export default function Modal({ show, onClose, children }) {
         </div>
 
         <div className="headerr">
-          <p>Salve meu contato!</p>
+          <p>Entre em contato conosco!</p>
         </div>
         <div className="body">
           <Image
-            src="/images/qrcodecontato.png"
+            src="/images/frame.png"
             alt="qr-code-contato"
             width={250}
             height={250}
