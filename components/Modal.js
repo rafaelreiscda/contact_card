@@ -3,12 +3,19 @@ import ReactDom from "react-dom";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Modal({ show, onClose, children }) {
+export default function Modal({ show, onClose = () => {}, id = "overlay" }) {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
+
+  const handleOutsideClick = (e) => {
+    if (e.target.id === id) {
+      e.stopPropagation();
+      onClose();
+    }
+  };
 
   function handleCloseModal(e) {
     e.preventDefault();
@@ -17,7 +24,7 @@ export default function Modal({ show, onClose, children }) {
   }
 
   const modalContent = show ? (
-    <div className="overlay" onClick={handleCloseModal}>
+    <div id={id} className="overlay" onClick={handleOutsideClick}>
       <div className="modal">
         <div className="closebutton">
           <a href="#" onClick={handleCloseModal}>
@@ -34,7 +41,7 @@ export default function Modal({ show, onClose, children }) {
         </div>
         <div className="body">
           <Image
-            src="/images/frame.png"
+            src="/images/qr-code.png"
             alt="qr-code-contato"
             width={250}
             height={250}
